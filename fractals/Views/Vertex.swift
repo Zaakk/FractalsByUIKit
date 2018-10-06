@@ -8,7 +8,14 @@
 
 import UIKit
 
-class Vertex: UIView, BasePoint {
+class Vertex: UIView {
+    private var internalPosition = CGPoint.zero
+    
+    var position:CGPoint {
+        get {
+            return internalPosition
+        }
+    }
 
     override private init(frame: CGRect) {
         fatalError("init(frame:) disabled, use init(position:) instead")
@@ -18,8 +25,9 @@ class Vertex: UIView, BasePoint {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(position:CGPoint) {
-        super.init(frame: CGRect(x: position.x, y: position.y, width: 1.0, height: 1.0))
+    required init(position:CGPoint) {
+        super.init(frame: CGRect(x: position.x, y: position.y, width: 2.0, height: 2.0))
+        internalPosition = position
     }
     
     override func layoutSubviews() {

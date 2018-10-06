@@ -20,10 +20,12 @@ protocol CalculatorDataSource: NSObjectProtocol {
 }
 
 protocol CalculatorListener: NSObjectProtocol {
-    func generated(point:BasePoint)
+    func calculated(point:CGPoint)
 }
 
 class Calculator {
+    
+    var delay:Float = 0.1
     
     weak var dataSource:CalculatorDataSource?
     weak var listener:CalculatorListener?
@@ -32,17 +34,30 @@ class Calculator {
     
     func start() {
         isStopped = false
-        guard let dataSource = self.dataSource else {
+        guard let dataSource = self.dataSource, let listener = self.listener else {
             return
         }
         let numberOfVertices = dataSource.numberOfVertices()
-        let canvasSize = dataSource.canvasSize()
+        var currentPosition = dataSource.startPosition()
         DispatchQueue.global().async { [weak self] in
             while !(self?.isStopped ?? false) {
+                guard let strongSelf = self else {
+                    return
+                }
                 let vertNumber = Int.random(in: 0..<numberOfVertices)
                 let vertexPosition = dataSource.positionForVertexWith(number: vertNumber)
+                let nextPoint = strongSelf.middlePosition(a: currentPosition, b: vertexPosition)
+                currentPosition = nextPoint
+                DispatchQueue.main.sync {
+                    listener.calculated(point: nextPoint)
+                }
+                sleep(UInt32(strongSelf.delay))
             }
         }
+    }
+    
+    private func middlePosition(a:CGPoint, b:CGPoint) -> CGPoint {
+        return CGPoint(x: (a.x + b.x) / 2.0, y: (a.y + b.y) / 2.0)
     }
     
     func stop() {

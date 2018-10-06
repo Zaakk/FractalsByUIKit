@@ -9,24 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let calculator = Calculator()
+    
     @IBOutlet weak var verticesField: UITextField!
     @IBOutlet weak var canvas: Canvas!
+    @IBOutlet weak var confimModeControl: UISegmentedControl!
     
     @IBAction func run(_ sender: Any) {
-        guard let numberOfVerts = Int(verticesField.text ?? "") else {
-            return
-        }
-        canvas.maxNumberOfVertices = numberOfVerts
+        calculator.listener = canvas
+        calculator.dataSource = canvas
+        calculator.start()
+        confimModeControl.isEnabled = false
     }
     
     @IBAction func clear(_ sender: Any) {
+        confimModeControl.isEnabled = true
+        calculator.stop()
         canvas.clear()
+    }
+    
+    @IBAction func configModeChanged(_ sender: UISegmentedControl) {
+        guard let configMode = ConfigMode(rawValue: sender.selectedSegmentIndex) else {
+            return
+        }
+        canvas.configMode = configMode
+    }
+    
+    @IBAction func stop(_ sender: Any) {
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 
