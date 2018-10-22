@@ -10,8 +10,13 @@ import UIKit
 
 class Point: Vertex {
     
-    override func layoutSubviews() {
-        backgroundColor = UIColor.black
+    required init(position: CGPoint) {
+        super.init(position: position)
+        self.color = UIColor.white
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }

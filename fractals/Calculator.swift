@@ -21,11 +21,12 @@ protocol CalculatorDataSource: NSObjectProtocol {
 
 protocol CalculatorListener: NSObjectProtocol {
     func calculated(point:CGPoint)
+    func stopped()
 }
 
 class Calculator {
     
-    var delay:Float = 0.1
+    var delay:Float = 0.0
     
     weak var dataSource:CalculatorDataSource?
     weak var listener:CalculatorListener?
@@ -33,6 +34,9 @@ class Calculator {
     private var isStopped = true
     
     func start() {
+        guard isStopped else {
+            return
+        }
         isStopped = false
         guard let dataSource = self.dataSource, let listener = self.listener else {
             return
@@ -40,7 +44,10 @@ class Calculator {
         let numberOfVertices = dataSource.numberOfVertices()
         var currentPosition = dataSource.startPosition()
         DispatchQueue.global().async { [weak self] in
-            while !(self?.isStopped ?? false) {
+            guard let strongSelf = self else {
+                return
+            }
+            while !strongSelf.isStopped {
                 guard let strongSelf = self else {
                     return
                 }
@@ -51,7 +58,9 @@ class Calculator {
                 DispatchQueue.main.sync {
                     listener.calculated(point: nextPoint)
                 }
-                sleep(UInt32(strongSelf.delay))
+            }
+            if strongSelf.isStopped {
+                strongSelf.listener?.stopped()
             }
         }
     }

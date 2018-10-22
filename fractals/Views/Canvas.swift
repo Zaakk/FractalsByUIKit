@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 enum ConfigMode:Int {
     case vertices = 0
@@ -14,7 +15,7 @@ enum ConfigMode:Int {
 }
 
 @IBDesignable
-class Canvas: UIView {
+class Canvas: SKScene {
     private var points:Set<Point> = []
     private var vertices:[Vertex] = []
     private var startPoint:Point = Point(position: CGPoint.zero)
@@ -30,23 +31,23 @@ class Canvas: UIView {
     func add(point:Point) {
         let (inserted, _) = points.insert(point)
         if inserted {
-            addSubview(point)
+            addChild(point)
         }
     }
     
     func add(vertex:Vertex) {
         vertices.append(vertex)
-        addSubview(vertex)
+        addChild(vertex)
     }
     
     func clear() {
         vertices.forEach { (vertex) in
-            vertex.removeFromSuperview()
+            vertex.removeFromParent()
         }
         vertices.removeAll()
         
         points.forEach { (point) in
-            point.removeFromSuperview()
+            point.removeFromParent()
         }
         points.removeAll()
     }
@@ -66,8 +67,8 @@ class Canvas: UIView {
             add(vertex: Vertex(position: location))
         case .startPoint:
             let point = Point(position: location)
-            point.backgroundColor = UIColor.yellow
-            startPoint.removeFromSuperview()
+            point.color = UIColor.yellow
+            startPoint.removeFromParent()
             startPoint = point
             add(point: point)
         }
@@ -79,6 +80,10 @@ extension Canvas:CalculatorListener {
     func calculated(point: CGPoint) {
         let dot = Point(position:point)
         add(point: dot)
+    }
+    
+    func stopped() {
+        clear()
     }
 }
 

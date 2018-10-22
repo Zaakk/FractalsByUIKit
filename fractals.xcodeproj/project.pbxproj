@@ -7,33 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC0201562162ADD800078CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0201552162ADD800078CB4 /* AppDelegate.swift */; };
-		BC0201582162ADD800078CB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0201572162ADD800078CB4 /* ViewController.swift */; };
-		BC02015B2162ADD800078CB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0201592162ADD800078CB4 /* Main.storyboard */; };
-		BC02015D2162ADDA00078CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC02015C2162ADDA00078CB4 /* Assets.xcassets */; };
-		BC0201602162ADDA00078CB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC02015E2162ADDA00078CB4 /* LaunchScreen.storyboard */; };
-		BC0201692162B24500078CB4 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0201682162B24500078CB4 /* Point.swift */; };
-		BC02016B2162B26500078CB4 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02016A2162B26500078CB4 /* Canvas.swift */; };
-		BC02016D2162B6E300078CB4 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02016C2162B6E300078CB4 /* Vertex.swift */; };
-		BC02016F2162BA6700078CB4 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02016E2162BA6700078CB4 /* Calculator.swift */; };
+		BC4BCF9C217E568A00BC609D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BCF9B217E568A00BC609D /* AppDelegate.swift */; };
+		BC4BCF9E217E568A00BC609D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC4BCF9D217E568A00BC609D /* GameScene.sks */; };
+		BC4BCFA4217E568A00BC609D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BCFA3217E568A00BC609D /* GameViewController.swift */; };
+		BC4BCFA7217E568A00BC609D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4BCFA5217E568A00BC609D /* Main.storyboard */; };
+		BC4BCFA9217E568B00BC609D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4BCFA8217E568B00BC609D /* Assets.xcassets */; };
+		BC4BCFAC217E568B00BC609D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4BCFAA217E568B00BC609D /* LaunchScreen.storyboard */; };
+		BC4BCFB7217E5B8100BC609D /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BCFB4217E5B8100BC609D /* Point.swift */; };
+		BC4BCFB8217E5B8100BC609D /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BCFB5217E5B8100BC609D /* Canvas.swift */; };
+		BC4BCFB9217E5B8100BC609D /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BCFB6217E5B8100BC609D /* Vertex.swift */; };
+		BC4BCFBB217E5FCB00BC609D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BCFBA217E5FCB00BC609D /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC0201522162ADD800078CB4 /* fractals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fractals.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC0201552162ADD800078CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC0201572162ADD800078CB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC02015A2162ADD800078CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC02015C2162ADDA00078CB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BC02015F2162ADDA00078CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BC0201612162ADDA00078CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC0201682162B24500078CB4 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		BC02016A2162B26500078CB4 /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
-		BC02016C2162B6E300078CB4 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
-		BC02016E2162BA6700078CB4 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		BC4BCF98217E568A00BC609D /* fractals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fractals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC4BCF9B217E568A00BC609D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC4BCF9D217E568A00BC609D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		BC4BCFA3217E568A00BC609D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BC4BCFA6217E568A00BC609D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC4BCFA8217E568B00BC609D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC4BCFAB217E568B00BC609D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC4BCFAD217E568B00BC609D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4BCFB4217E5B8100BC609D /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		BC4BCFB5217E5B8100BC609D /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		BC4BCFB6217E5B8100BC609D /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		BC4BCFBA217E5FCB00BC609D /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BC02014F2162ADD800078CB4 /* Frameworks */ = {
+		BC4BCF95217E568A00BC609D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,43 +45,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC0201492162ADD800078CB4 = {
+		BC4BCF8F217E568A00BC609D = {
 			isa = PBXGroup;
 			children = (
-				BC0201542162ADD800078CB4 /* fractals */,
-				BC0201532162ADD800078CB4 /* Products */,
+				BC4BCF9A217E568A00BC609D /* fractals */,
+				BC4BCF99217E568A00BC609D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BC0201532162ADD800078CB4 /* Products */ = {
+		BC4BCF99217E568A00BC609D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC0201522162ADD800078CB4 /* fractals.app */,
+				BC4BCF98217E568A00BC609D /* fractals.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC0201542162ADD800078CB4 /* fractals */ = {
+		BC4BCF9A217E568A00BC609D /* fractals */ = {
 			isa = PBXGroup;
 			children = (
-				BC0201672162B1F400078CB4 /* Views */,
-				BC0201552162ADD800078CB4 /* AppDelegate.swift */,
-				BC0201572162ADD800078CB4 /* ViewController.swift */,
-				BC02016E2162BA6700078CB4 /* Calculator.swift */,
-				BC0201592162ADD800078CB4 /* Main.storyboard */,
-				BC02015C2162ADDA00078CB4 /* Assets.xcassets */,
-				BC02015E2162ADDA00078CB4 /* LaunchScreen.storyboard */,
-				BC0201612162ADDA00078CB4 /* Info.plist */,
+				BC4BCFBA217E5FCB00BC609D /* Calculator.swift */,
+				BC4BCFB3217E5B8100BC609D /* Views */,
+				BC4BCF9B217E568A00BC609D /* AppDelegate.swift */,
+				BC4BCF9D217E568A00BC609D /* GameScene.sks */,
+				BC4BCFA3217E568A00BC609D /* GameViewController.swift */,
+				BC4BCFA5217E568A00BC609D /* Main.storyboard */,
+				BC4BCFA8217E568B00BC609D /* Assets.xcassets */,
+				BC4BCFAA217E568B00BC609D /* LaunchScreen.storyboard */,
+				BC4BCFAD217E568B00BC609D /* Info.plist */,
 			);
 			path = fractals;
 			sourceTree = "<group>";
 		};
-		BC0201672162B1F400078CB4 /* Views */ = {
+		BC4BCFB3217E5B8100BC609D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BC0201682162B24500078CB4 /* Point.swift */,
-				BC02016A2162B26500078CB4 /* Canvas.swift */,
-				BC02016C2162B6E300078CB4 /* Vertex.swift */,
+				BC4BCFB4217E5B8100BC609D /* Point.swift */,
+				BC4BCFB5217E5B8100BC609D /* Canvas.swift */,
+				BC4BCFB6217E5B8100BC609D /* Vertex.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,13 +90,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC0201512162ADD800078CB4 /* fractals */ = {
+		BC4BCF97217E568A00BC609D /* fractals */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC0201642162ADDA00078CB4 /* Build configuration list for PBXNativeTarget "fractals" */;
+			buildConfigurationList = BC4BCFB0217E568B00BC609D /* Build configuration list for PBXNativeTarget "fractals" */;
 			buildPhases = (
-				BC02014E2162ADD800078CB4 /* Sources */,
-				BC02014F2162ADD800078CB4 /* Frameworks */,
-				BC0201502162ADD800078CB4 /* Resources */,
+				BC4BCF94217E568A00BC609D /* Sources */,
+				BC4BCF95217E568A00BC609D /* Frameworks */,
+				BC4BCF96217E568A00BC609D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -101,25 +104,25 @@
 			);
 			name = fractals;
 			productName = fractals;
-			productReference = BC0201522162ADD800078CB4 /* fractals.app */;
+			productReference = BC4BCF98217E568A00BC609D /* fractals.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BC02014A2162ADD800078CB4 /* Project object */ = {
+		BC4BCF90217E568A00BC609D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Alexander Zakatnov";
 				TargetAttributes = {
-					BC0201512162ADD800078CB4 = {
+					BC4BCF97217E568A00BC609D = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = BC02014D2162ADD800078CB4 /* Build configuration list for PBXProject "fractals" */;
+			buildConfigurationList = BC4BCF93217E568A00BC609D /* Build configuration list for PBXProject "fractals" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,58 +130,59 @@
 				en,
 				Base,
 			);
-			mainGroup = BC0201492162ADD800078CB4;
-			productRefGroup = BC0201532162ADD800078CB4 /* Products */;
+			mainGroup = BC4BCF8F217E568A00BC609D;
+			productRefGroup = BC4BCF99217E568A00BC609D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC0201512162ADD800078CB4 /* fractals */,
+				BC4BCF97217E568A00BC609D /* fractals */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BC0201502162ADD800078CB4 /* Resources */ = {
+		BC4BCF96217E568A00BC609D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC0201602162ADDA00078CB4 /* LaunchScreen.storyboard in Resources */,
-				BC02015D2162ADDA00078CB4 /* Assets.xcassets in Resources */,
-				BC02015B2162ADD800078CB4 /* Main.storyboard in Resources */,
+				BC4BCFA7217E568A00BC609D /* Main.storyboard in Resources */,
+				BC4BCF9E217E568A00BC609D /* GameScene.sks in Resources */,
+				BC4BCFA9217E568B00BC609D /* Assets.xcassets in Resources */,
+				BC4BCFAC217E568B00BC609D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BC02014E2162ADD800078CB4 /* Sources */ = {
+		BC4BCF94217E568A00BC609D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC0201582162ADD800078CB4 /* ViewController.swift in Sources */,
-				BC0201562162ADD800078CB4 /* AppDelegate.swift in Sources */,
-				BC0201692162B24500078CB4 /* Point.swift in Sources */,
-				BC02016D2162B6E300078CB4 /* Vertex.swift in Sources */,
-				BC02016B2162B26500078CB4 /* Canvas.swift in Sources */,
-				BC02016F2162BA6700078CB4 /* Calculator.swift in Sources */,
+				BC4BCFB7217E5B8100BC609D /* Point.swift in Sources */,
+				BC4BCFBB217E5FCB00BC609D /* Calculator.swift in Sources */,
+				BC4BCFA4217E568A00BC609D /* GameViewController.swift in Sources */,
+				BC4BCFB8217E5B8100BC609D /* Canvas.swift in Sources */,
+				BC4BCF9C217E568A00BC609D /* AppDelegate.swift in Sources */,
+				BC4BCFB9217E5B8100BC609D /* Vertex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC0201592162ADD800078CB4 /* Main.storyboard */ = {
+		BC4BCFA5217E568A00BC609D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BC02015A2162ADD800078CB4 /* Base */,
+				BC4BCFA6217E568A00BC609D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BC02015E2162ADDA00078CB4 /* LaunchScreen.storyboard */ = {
+		BC4BCFAA217E568B00BC609D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BC02015F2162ADDA00078CB4 /* Base */,
+				BC4BCFAB217E568B00BC609D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -186,7 +190,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BC0201622162ADDA00078CB4 /* Debug */ = {
+		BC4BCFAE217E568B00BC609D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		BC0201632162ADDA00078CB4 /* Release */ = {
+		BC4BCFAF217E568B00BC609D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +306,7 @@
 			};
 			name = Release;
 		};
-		BC0201652162ADDA00078CB4 /* Debug */ = {
+		BC4BCFB1217E568B00BC609D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,7 +324,7 @@
 			};
 			name = Debug;
 		};
-		BC0201662162ADDA00078CB4 /* Release */ = {
+		BC4BCFB2217E568B00BC609D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -341,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC02014D2162ADD800078CB4 /* Build configuration list for PBXProject "fractals" */ = {
+		BC4BCF93217E568A00BC609D /* Build configuration list for PBXProject "fractals" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC0201622162ADDA00078CB4 /* Debug */,
-				BC0201632162ADDA00078CB4 /* Release */,
+				BC4BCFAE217E568B00BC609D /* Debug */,
+				BC4BCFAF217E568B00BC609D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC0201642162ADDA00078CB4 /* Build configuration list for PBXNativeTarget "fractals" */ = {
+		BC4BCFB0217E568B00BC609D /* Build configuration list for PBXNativeTarget "fractals" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC0201652162ADDA00078CB4 /* Debug */,
-				BC0201662162ADDA00078CB4 /* Release */,
+				BC4BCFB1217E568B00BC609D /* Debug */,
+				BC4BCFB2217E568B00BC609D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BC02014A2162ADD800078CB4 /* Project object */;
+	rootObject = BC4BCF90217E568A00BC609D /* Project object */;
 }

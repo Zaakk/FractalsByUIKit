@@ -7,31 +7,16 @@
 //
 
 import UIKit
+import SpriteKit
 
-class Vertex: UIView {
-    private var internalPosition = CGPoint.zero
+class Vertex: SKSpriteNode {
     
-    var position:CGPoint {
-        get {
-            return internalPosition
-        }
-    }
-
-    override private init(frame: CGRect) {
-        fatalError("init(frame:) disabled, use init(position:) instead")
+    required init(position:CGPoint) {
+        super.init(texture: nil, color: UIColor.green, size: CGSize(width: 2.0, height: 2.0))
+        self.position = position
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    required init(position:CGPoint) {
-        super.init(frame: CGRect(x: position.x, y: position.y, width: 2.0, height: 2.0))
-        internalPosition = position
-    }
-    
-    override func layoutSubviews() {
-        backgroundColor = UIColor.red
-    }
-
 }

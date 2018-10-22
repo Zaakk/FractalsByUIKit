@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  fractals
 //
-//  Created by Alexander Zakatnov on 01/10/2018.
+//  Created by Alexander Zakatnov on 22/10/2018.
 //  Copyright © 2018 Alexander Zakatnov. All rights reserved.
 //
 
